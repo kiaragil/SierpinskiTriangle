@@ -1,7 +1,7 @@
 public int siz = 400;
 public int theX = 100;
 public int theY = 550;
-public int theLen = 400;
+public int theLen = 600;
 
 public void setup(){
 	size(600,600);
@@ -15,12 +15,11 @@ public void draw(){
 
 }
 public void mouseDragged(){
-
 }
 
 public void mouseReleased(){
 	siz /= 2;
-	if (siz == 0){
+	if (siz <= 1){
 		siz = 400;
 		
 	}
