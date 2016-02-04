@@ -1,4 +1,4 @@
-public int size = 400;
+public int siz = 400;
 public int theX = 100;
 public int theY = 550;
 public int theLen = 400;
@@ -19,15 +19,15 @@ public void mouseDragged(){
 }
 
 public void mouseReleased(){
-	size /= 2;
-	if (size == 0){
-		size = 400;
+	siz /= 2;
+	if (siz == 0){
+		siz = 400;
 		
 	}
 }
 
 public void sierpinski(int x, int y, int len){
-	if (len <= size){
+	if (len <= siz){
 		fill(219,152,5);
 		triangle(x, y,x+len,y,x+len/2,y-len);
 	}
